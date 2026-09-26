@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: #1e3c72;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 25px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #1e3c72;
+        }
+
+        .btn {
+            padding: 8px 18px;
+            border-radius: 5px;
+            border: 1px solid #1e3c72;
+        }
+
+        .btn-primary {
+            background: #1e3c72;
+            color: #fff;
+        }
+
+        .section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 42px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .adv-box {
+            background: #f4f6fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .adv-box h4 {
+            margin-bottom: 10px;
+            color: #1e3c72;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Build. Predict. Analyze. Grow.</h2>
+    <nav>
+        <a href="/">Home</a>
+        <!-- <a href="#about">About</a>
+        <a href="#advantages">Advantages</a>
+        <a href="#impact">Impact</a> -->
+        <a href="/login/" class="btn">Login</a>
+        <a href="/register/" class="btn btn-primary">Register</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="section hero" id="home">
+    <h1>Human Brain Wave Study using EEG and Deep Learning for Emotion Recognition</h1>
+</section>
+
+<!-- ABSTRACT -->
+<section class="section" id="about">
+    <div class="card">
+        <h3>Project Abstract</h3>
+        <p>Emotion recognition using electroencephalogram (EEG) signals has become an important research area in affective computing, healthcare, and human–computer interaction. Traditional emotion recognition approaches often rely on facial expressions, speech, or textual data, which may not accurately represent a person’s genuine emotional state. EEG-based emotion recognition provides a more reliable alternative by directly analyzing brain activity. The existing basepaper utilizes signal preprocessing, feature extraction techniques such as Power Spectral Density (PSD), Spectral Entropy (SE), and Hjorth parameters, followed by dimensionality reduction using Principal Component Analysis (PCA). The processed features are then classified using machine learning models including Gaussian Naïve Bayes, Support Vector Machine (SVM), Random Forest, and deep learning models such as Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), achieving an accuracy of up to 97%.
+
+            To further enhance emotion classification performance, this work proposes an advanced hybrid model that integrates Multi-Scale Convolutional Neural Networks (CNN), Transformer architecture, Bidirectional Long Short-Term Memory (BiLSTM), and XGBoost. The Multi-Scale CNN is used to capture spatial and temporal patterns from EEG signals at different resolutions, while the Transformer module effectively models long-range dependencies within the EEG sequences. The BiLSTM layer learns bidirectional temporal relationships in the signal data, and XGBoost is employed as the final classifier to improve decision-making and classification accuracy. This hybrid architecture enables better feature representation and improves the robustness of the emotion recognition system.
+            
+            The proposed model is evaluated using the EEG Emotion dataset containing labeled emotional states such as positive, neutral, and negative. Experimental results demonstrate significant performance improvements over the existing system, achieving a final accuracy of 0.9929, with precision, recall, and F1-score values close to 0.99 across all emotion classes. The results indicate that the proposed hybrid framework provides a more accurate and reliable approach for EEG-based emotion recognition and can be effectively applied in intelligent healthcare systems, affective computing applications, and advanced human–computer interaction systems.</p>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="section" id="advantages">
+    <div class="card">
+        <h3>Advantages of the Project</h3>
+        <div class="advantages-grid">
+            <div class="adv-box">
+                <h4>⚡ Fast Decision Making</h4>
+                <p>Provides real-time analytics to improve business and research decisions.</p>
+            </div>
+            <div class="adv-box">
+                <h4>📊 Accurate Predictions</h4>
+                <p>Uses AI models to generate reliable and data-driven predictions.</p>
+            </div>
+            <div class="adv-box">
+                <h4>🔒 Secure & Scalable</h4>
+                <p>Designed with modern security standards and scalable architecture.</p>
+            </div>
+            <div class="adv-box">
+                <h4>🌐 Easy Accessibility</h4>
+                <p>Web-based platform accessible from anywhere with a simple interface.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIETY IMPACT -->
+<section class="section" id="impact">
+    <div class="card">
+        <h3>How It Helps Current Society</h3>
+        <p>
+            In today's data-driven world, organizations require intelligent systems to analyze
+            large amounts of information. This platform supports industries like healthcare,
+            education, finance, and agriculture by enabling smarter decisions.
+        </p>
+        <p>
+            It empowers startups, researchers, and students by providing AI tools without requiring
+            deep technical expertise, helping democratize artificial intelligence for societal growth.
+        </p>
+    </div>
+</section>
+
+
+</body>
+</html>
