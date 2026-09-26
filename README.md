@@ -1,4 +1,4 @@
-@"
+
 # Human Brain Wave Study for Emotion Recognition
 
 An EEG-based emotion recognition system that combines deep learning and machine learning to extract meaningful features from human brain-wave signals and classify emotional states through a Django web application.
