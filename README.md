@@ -9,7 +9,7 @@ This project analyzes EEG (Electroencephalography) signals for emotion recogniti
 
 The trained models are integrated into a Django-based web application where users can submit EEG samples and receive a predicted emotion along with the model's confidence score.
 
-## 🔬 Methodology
+## Methodology
 
 ```text
 EEG Signal
